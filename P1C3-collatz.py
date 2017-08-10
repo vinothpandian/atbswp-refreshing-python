@@ -1,3 +1,5 @@
+#! python3
+
 import sys
 
 def collatz(num):

@@ -1,3 +1,5 @@
+#! python3
+
 def displayInventory(inventory):
     print("Inventory:")
     sum = 0

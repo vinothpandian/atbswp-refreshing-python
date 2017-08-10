@@ -1,3 +1,5 @@
+#! python3
+
 def listToString(list):
     listString = ""
     for str in list[:-1]:
