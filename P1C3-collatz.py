@@ -9,6 +9,7 @@ def collatz(num):
         return (num*3)+1
 
 try:
+    print('Enter your number :',end='')
     num = int(input())
 except ValueError:
     print("That's not a number!")
