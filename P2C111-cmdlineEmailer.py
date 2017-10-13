@@ -18,7 +18,7 @@ if len(sys.argv) > 3:
     subject = sys.argv[2]
     print(" Sending the message: %s\nTo: %s................." %(message, email))
 else:
-    print("Please run the program with email and message P2C11-cmdlineEmailer.py [email] [message]")
+    print("Please run the program with email and message P2C111-cmdlineEmailer.py [email] [message]")
     sys.exit()
 
 browser = webdriver.Firefox()
