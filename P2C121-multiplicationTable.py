@@ -36,5 +36,6 @@ for row in range(1, number+2):
 
 print("Saving the file....")
 workbook.save("multiplicationTableOf"+str(number)+".xlsx")
+workbook.close()
 
 print("Done")
