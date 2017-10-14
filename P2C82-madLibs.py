@@ -2,7 +2,7 @@
 
 import os, re
 
-FOLDER = './P2C8Ex2-MadLibs'
+FOLDER = './P2C82-MadLibs'
 FILE = 'madlib.txt'
 
 if not os.path.exists(FOLDER):

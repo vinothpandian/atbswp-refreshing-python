@@ -1,3 +1,6 @@
 /xkcd/
 geckodriver.log
 test.py
+*.log
+.idea/
+/P2C112-imageSiteDownload/
