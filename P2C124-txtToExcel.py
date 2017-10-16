@@ -15,8 +15,8 @@ sheet = workbook.get_active_sheet()
 col = 0
 
 print("Finding the files in %s folder...." % TEXTFILE_FOLDER)
-for folderName, subFolders, fileNames in os.walk(TEXTFILE_FOLDER):
-    for file in fileNames:
+for file in os.listdir(TEXTFILE_FOLDER):
+    if file.endswith(".pdf") :
         col += 1
         print("Reading text file \"%s\" and writing it to excel sheet...." % file)
         txtFile = open(os.path.join(TEXTFILE_FOLDER, file))
