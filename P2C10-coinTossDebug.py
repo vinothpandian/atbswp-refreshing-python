@@ -1,4 +1,4 @@
-#! python3
+#! python
 import random
 import logging
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')

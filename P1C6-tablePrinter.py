@@ -1,4 +1,4 @@
-#!python3
+#! python
 
 def printTable(tableData):
 

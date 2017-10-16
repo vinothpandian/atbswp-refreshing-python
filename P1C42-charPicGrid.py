@@ -1,4 +1,4 @@
-#! python3
+#! python
 
 def displayCharGrid(grid):
     y=0

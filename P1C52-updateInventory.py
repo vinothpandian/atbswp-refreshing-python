@@ -1,4 +1,4 @@
-#! python3
+#! python
 
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 

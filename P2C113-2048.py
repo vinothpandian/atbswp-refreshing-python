@@ -1,4 +1,4 @@
-#! python3
+#! python
 
 import sys, bs4
 from selenium import webdriver

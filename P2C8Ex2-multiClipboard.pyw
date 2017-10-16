@@ -1,4 +1,4 @@
-#!python
+#! python
 
 import pyperclip, shelve, sys, os
 

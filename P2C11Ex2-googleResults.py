@@ -1,4 +1,4 @@
-#!python3
+#! python
 
 import requests, bs4
 import webbrowser, sys
