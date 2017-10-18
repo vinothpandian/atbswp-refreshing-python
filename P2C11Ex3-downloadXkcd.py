@@ -4,7 +4,7 @@ import requests, bs4, os, logging
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.disable(logging.DEBUG)
-url = 'http://xkcd.com/1524/'
+url = 'http://xkcd.com/'
 os.makedirs("xkcd", exist_ok=True)
 
 while not url.endswith('#'):
@@ -20,8 +20,11 @@ while not url.endswith('#'):
         comicUrl = comic[0].get("src")
         # logging.debug(comicUrl)
         print("Downloading comic %s..." %comicUrl)
-        imgRes = requests.get('http:%s' %comicUrl)
-        imgRes.raise_for_status()
+        try:
+            imgRes = requests.get('http:%s' % comicUrl)
+            imgRes.raise_for_status()
+        except requests.RequestException:
+            print("Couldn't find comic...")
 
         comicFile = open(os.path.join("xkcd", os.path.basename(comicUrl)), 'wb')
         for chunk in imgRes.iter_content(100000):
