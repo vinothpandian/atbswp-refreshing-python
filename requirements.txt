@@ -10,6 +10,6 @@ openpyxl==2.4.8
 PyPDF2==1.26.0
 pyperclip==1.5.27
 python-docx==0.8.6
-requests==2.18.4
+requests==2.20.0
 selenium==3.6.0
 urllib3==1.22
